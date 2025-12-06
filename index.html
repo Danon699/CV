@@ -1,94 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head>
+<link>
     <meta charset="UTF-8">
     <title>Daniil Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="Avatar.jpg" width="200" alt="Тут моё фото">
-            </td>
-            <td>
+
+    <div class="container">
+
+        <div class="info">
+
+            <img src="Avatar.jpg" alt="Тут моё фото" class="avatar">
+            
+            <div class="info-text">
                 <h1>Даниил Коробков</h1>
-                <p><em>Я начинающий <strong>фронтенд-разработчик.</strong></em></p>
+
+                <p>Я начинающий <strong>фронтенд-разработчик.</strong></p>
                 <p>Обладаю навыками верстки на HTML и CSS. </p>
-            </td>
-        </tr>
-    </table>
 
-    <hr>
+                <h4>Мои социальные сети</h4>
 
-    <h2>Мои социальные сети</h2>
+                <a href="https://vk.com/korobkov699" target="_blank">VK</a>
+                |
+                <a href="https://t.me/Danon699" target="_blank">Telegram</a>
+            </div>
 
-    <ul type="square">
-        <li><a href="https://vk.com/korobkov699" target="_blank">VK</a></li>
-        <li><a href="https://t.me/Danon699" target="_blank">Telegram</a></li>
-    </ul>
+        </div>
 
-    <hr>
+        <div class="card bg-yellow">
 
-    <h2>Мои хобби</h2>
+            <h2>Мои хобби</h2>
 
-    <ol>
-        <li>Спорт</li>
-        <li>Шахматы</li>
-    </ol>
+            <ol class="list">
+                <li>Спорт</li>
+                <li>Шахматы</li>
+                <li>Коллекционирование</li>
+            </ol>
+        </div>
 
-    <hr>
+        <div class="card bg-green">
 
-    <h2>Опыт работы</h2>
-    
-    <table border="2">
-        <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>СМУ-5</td>
-                <td>Техник ПТО</td>
-                <td>2023-2024</td>
-            </tr>
-            <tr>
-                <td>Freelance</td>
-                <td>Frontend Developer</td>
-                <td>2025-2026</td>
-        </tbody>
-        <tfoot></tfoot>
-    </table>
+            <h2>Опыт работы</h2>
+            
+            <table class="table">
+                    <tr>
+                        <td>СМУ-5</td>
+                        <td>Техник ПТО</td>
+                        <td>2023-2024</td>
+                    </tr>
+                    <tr>
+                        <td>Freelance</td>
+                        <td>Frontend Developer</td>
+                        <td>2025-2026</td>
+                    </tr>
+                     <tr>
+                        <td>Yandex</td>
+                        <td>Frontend developer</td>
+                        <td>2026-2028</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft</td>
+                        <td>Lead frontend</td>
+                        <td>2028-2029</td>
+                    </tr>
+            </table>
+        </div>
 
-    <hr>
+        <div class="card bg-red">
+            <h2>Портфолио</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="http://127.0.0.1:5500/index.html">Сайт портфолио</a>
+                </li>
+            </ul>
+        </div>
 
-    <h2>Портфолио</h2>
-    <a href="Portfolio.html">Посмотреть работы</a>
+        <div class="contact">
 
-    <hr>
+            <h2>Связаться со мной</h2>
 
-    <h2>Связаться со мной</h2>
+            <form action="/">
 
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя...">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email...">
+                    </div>
+                </div>
 
-        <br>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" rows="2" cols="15"></textarea>
+                </div>
 
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email...">
+                <input class="button" type="submit" value="Связаться">
 
-        <br>
+            </form>
+        </div>
 
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea id="text" rows="2" cols="15"></textarea>
+        <div class="position">
 
-        <br>
+            <div class="box">
 
-        <input type="submit" value="Связаться">
-    </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 500px;"></div>
+
 </body>
 </html>
